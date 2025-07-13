@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Impressive Presentation</title>
+
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/night.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+  <style>
+    .reveal .slides {
+      text-align: left;
+    }
+    .reveal h1, .reveal h2 {
+      margin-bottom: 40px;
+    }
+    .reveal .slides section.has-dark-background,
+    .reveal .slides section.has-dark-background h1,
+    .reveal .slides section.has-dark-background h2,
+    .reveal .slides section.has-dark-background h3,
+    .reveal .slides section.has-dark-background h4 {
+      color: #fff;
+    }
+    
+    .reveal .slides section.has-light-background,
+    .reveal .slides section.has-light-background h1,
+    .reveal .slides section.has-light-background h2,
+    .reveal .slides section.has-light-background h3,
+    .reveal .slides section.has-light-background h4 {
+      color: #222;
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      align-items: center;
+    }
+    
+    .big-text {
+      font-size: 3em !important;
+      font-weight: bold;
+      line-height: 1em !important;
+      margin: 0 !important;
+    }
+    
+    .reveal .progress {
+      height: 5px;
+    }
+
+    .r-fit-text {
+      white-space: nowrap;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Title Slide -->
+      <section data-background-gradient="linear-gradient(to bottom, #42275a, #734b6d)">
+        <h1 class="r-fit-text">Impressive Presentation</h1>
+        <h3>Created with reveal.js</h3>
+        <p>
+          <small>Click anywhere to begin or press spacebar</small>
+        </p>
+      </section>
+
+      <!-- Introduction -->
+      <section data-background-color="#1A237E">
+        <h2>Powerful Presentations Made Easy</h2>
+        <ul>
+          <li class="fragment fade-in">Beautiful transitions</li>
+          <li class="fragment fade-in">Responsive design</li>
+          <li class="fragment fade-in">Interactive elements</li>
+          <li class="fragment fade-in">Perfect for your next presentation</li>
+        </ul>
+      </section>
+
+      <!-- Vertical Slides Example -->
+      <section>
+        <section data-background-color="#006064">
+          <h2>Vertical Slides</h2>
+          <p>Press <b>DOWN</b> to see more</p>
+          <div class="fragment">
+            <p>Perfect for organizing content hierarchically</p>
+          </div>
+        </section>
+        <section data-background-color="#00796B">
+          <h2>Second Vertical Slide</h2>
+          <p>This is a nested slide.</p>
+          <div class="fragment fade-up">
+            <p>You can use different transitions for each fragment!</p>
+          </div>
+        </section>
+        <section data-background-color="#004D40">
+          <h2>Final Depth</h2>
+          <p>Navigating is simple:</p>
+          <ul>
+            <li>Left/Right: Navigate horizontal slides</li>
+            <li>Up/Down: Navigate vertical slides</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Image Background Slide -->
+      <section data-background="https://source.unsplash.com/random/1920x1080/?nature">
+        <h2 style="background-color: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px;">Stunning Backgrounds</h2>
+        <div style="background-color: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px;">
+          <p>Create atmosphere with beautiful images</p>
+          <p class="fragment fade-in">Enhance your storytelling</p>
+        </div>
+      </section>
+
+      <!-- Auto-Animate Example -->
+      <section data-auto-animate>
+        <h2 data-id="title">Auto-Animations</h2>
+        <div class="r-hstack justify-center">
+          <div data-id="box1" style="background: cyan; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+          <div data-id="box2" style="background: magenta; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+          <div data-id="box3" style="background: yellow; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+        </div>
+      </section>
+      <section data-auto-animate>
+        <h2 data-id="title">Sleek Animations</h2>
+        <div class="r-hstack justify-center">
+          <div data-id="box1" style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
+          <div data-id="box2" style="background: magenta; width: 150px; height: 200px; margin: 10px;"></div>
+          <div data-id="box3" style="background: yellow; width: 150px; height: 300px; margin: 10px;"></div>
+        </div>
+      </section>
+
+      <!-- Code Highlighting -->
+      <section>
+        <h2>Beautiful Code Highlighting</h2>
+        <pre><code class="hljs javascript" data-trim data-line-numbers="4,8-10">
+          import React, { useState } from 'react';
+
+          function Counter() {
+            const [count, setCount] = useState(0);
+            
+            return (
+              <div>
+                <p>You clicked {count} times</p>
+                <button onClick={() => setCount(count + 1)}>
+                  Click me
+                </button>
+              </div>
+            );
+          }
+        </code></pre>
+        <p class="fragment fade-in">Perfect for technical presentations!</p>
+      </section>
+
+      <!-- Two column layout -->
+      <section data-background-gradient="linear-gradient(to right, #000428, #004e92)">
+        <h2>Flexible Layouts</h2>
+        <div class="grid-container">
+          <div>
+            <h3>Powerful Features</h3>
+            <ul>
+              <li class="fragment fade-in">Responsive design</li>
+              <li class="fragment fade-in">Multiple layouts</li>
+              <li class="fragment fade-in">Custom animations</li>
+            </ul>
+          </div>
+          <div class="fragment fade-left">
+            <img src="https://picsum.photos/id/3/600/400" alt="Demo Image" style="border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+          </div>
+        </div>
+      </section>
+
+      <!-- Big text slide -->
+      <section data-background-color="#C62828">
+        <p class="big-text">Make an</p>
+        <p class="big-text fragment">IMPACT</p>
+        <p class="fragment">With dramatic text effects</p>
+      </section>
+
+      <!-- Final slide with multiple fragments -->
+      <section data-background-gradient="linear-gradient(to bottom, #56CCF2, #2F80ED)">
+        <h2 class="r-fit-text">Ready to create your own?</h2>
+        <ul>
+          <li class="fragment fade-in">Easy to customize</li>
+          <li class="fragment fade-in">Simple HTML markup</li>
+          <li class="fragment fade-in">Works everywhere</li>
+        </ul>
+        <div class="fragment">
+          <p>Start creating impressive presentations today!</p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+      transition: 'slide',
+      backgroundTransition: 'zoom',
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      // More customization
+      autoAnimateEasing: 'ease-out',
+      autoAnimateDuration: 0.8,
+      autoAnimateUnmatched: false,
+      progress: true,
+      controls: true,
+      center: false,
+      // Presentation size
+      width: 1200,
+      height: 700,
+      margin: 0.05
+    });
+  </script>
+</body>
+
+</html>
